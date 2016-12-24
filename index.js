@@ -1,11 +1,8 @@
 /**
- * Copyright (c) 2015-present, Facebook, Inc.
- * All rights reserved.
- *
- * This source code is licensed under the BSD-style license found in the
- * LICENSE file in the root directory of this source tree. An additional grant
- * of patent rights can be found in the PATENTS file in the same directory.
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
  */
+
 'use strict';
 
 var path = require('path');
@@ -42,12 +39,11 @@ const plugins = [
 // https://babeljs.io/docs/usage/babelrc/#env-option
 // We are not using `env` because it’s ignored in versions > babel-core@6.10.4:
 // https://github.com/babel/babel/issues/4539
-// https://github.com/facebookincubator/create-react-app/issues/720
 // It’s also nice that we can enforce `NODE_ENV` being specified.
 var env = process.env.BABEL_ENV || process.env.NODE_ENV;
 if (env !== 'development' && env !== 'test' && env !== 'production') {
   throw new Error(
-    'Using `babel-preset-react-app` requires that you specify `NODE_ENV` or '+
+    'Using `babel-preset-rear` requires that you specify `NODE_ENV` or '+
     '`BABEL_ENV` environment variables. Valid values are "development", ' +
     '"test", and "production". Instead, received: ' + JSON.stringify(env) + '.'
   );
@@ -90,7 +86,6 @@ if (env === 'test') {
   if (env === 'production') {
     // Optimization: hoist JSX that never changes out of render()
     // Disabled because of issues:
-    // * https://github.com/facebookincubator/create-react-app/issues/525
     // * https://phabricator.babeljs.io/search/query/pCNlnC2xzwzx/
     // * https://github.com/babel/babel/issues/4516
     // TODO: Enable again when these issues are resolved.

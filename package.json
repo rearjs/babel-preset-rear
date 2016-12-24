@@ -2,7 +2,7 @@
   "name": "babel-preset-rear",
   "version": "1.0.0",
   "description": "Babel preset used by Rear",
-  "repository": "github.com/rearjs/babel-preset-rear",
+  "repository": "http://github.com/rearjs/babel-preset-rear.git",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/rearjs/babel-preset-rear/issues"
