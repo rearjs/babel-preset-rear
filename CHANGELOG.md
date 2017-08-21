@@ -1,24 +1,46 @@
 # Change Log
 
-All notable changes to this project will be documented in this file.
-This project adheres to [Semantic Versioning](http://semver.org/). However, note tha **major** API changes could be pushed on a minor semantic version until version 1.0.0 is reached.
+## [1.0.3] (2017-08-21)
 
-## [1.0.1] 2016-12-24
+### :bug: Bug Fix
 
-## Added
+* Add back previously removed `babel-preset-env`
 
-- This Change Log file.
+### :rocket: Enhancement
 
-## Changed
+* Update project dependencies versions.
 
-- Change project name in error message.
-- Update repository URL in package.json
+### :memo: Documentation
+
+* Update CHANGELOG.md format
+
+## [1.0.2] (2017-06-05)
+
+### :rocket: Enhancement
+
+* Update project dependencies versions.
+
+## [1.0.1] (2016-12-24)
+
+### :bug: Bug Fix
+
+* Changed project name in error messages.
+
+### :memo: Documentation
+
+* Add a Change Log file.
+* Update repository URL in package.json
 
 ## [1.0.0] 2016-12-24
 
-### Added
+### :rocket: New Feature
 
-Add babel preset for Rear Projects. This preset include support for ES6 class properties, flowtype, jsx syntax and react.
+Add babel preset for Rear Projects. This preset include support for ES6 class 
+properties, flowtype, jsx syntax and react.
 
-[1.0.1]: https://github.com/rearjs/babel-preset-rear/compare/v.1.0.0...HEAD
+
+
+[1.0.3]: https://github.com/rearjs/babel-preset-rear/compare/1.0.2...1.0.3
+[1.0.2]: https://github.com/rearjs/babel-preset-rear/compare/1.0.1...1.0.2
+[1.0.1]: https://github.com/rearjs/babel-preset-rear/compare/1.0.0...1.0.1
 [1.0.0]: https://github.com/rearjs/babel-preset-rear/tree/1.0.0

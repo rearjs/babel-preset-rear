@@ -58,40 +58,16 @@ if (env === 'development' || env === 'test') {
   ]);
 }
 
-if (env === 'test') {
-  module.exports = {
-    presets: [
-      // ES features necessary for user's Node version
-      [require('babel-preset-env').default, {
-        targets: {
-          node: parseFloat(process.versions.node),
-        },
-      }],
-      // JSX, Flow
-      require.resolve('babel-preset-react')
-    ],
-    plugins: plugins
-  };
-} else {
-  module.exports = {
-    presets: [
-      // Latest stable ECMAScript features
-      require.resolve('babel-preset-latest'),
-      // JSX, Flow
-      require.resolve('babel-preset-react')
-    ],
-    plugins: plugins
-  };
-
-  if (env === 'production') {
-    // Optimization: hoist JSX that never changes out of render()
-    // Disabled because of issues:
-    // * https://phabricator.babeljs.io/search/query/pCNlnC2xzwzx/
-    // * https://github.com/babel/babel/issues/4516
-    // TODO: Enable again when these issues are resolved.
-    // plugins.push.apply(plugins, [
-    //   require.resolve('babel-plugin-transform-react-constant-elements')
-    // ]);
-  }
-}
-
+module.exports = {
+  presets: [
+    // ES features necessary for user's Node version
+    [require('babel-preset-env').default, {
+      targets: {
+        node: parseFloat(process.versions.node),
+      },
+    }],
+    // JSX, Flow
+    require.resolve('babel-preset-rear')
+  ],
+  plugins: plugins
+};
