@@ -32,7 +32,9 @@ const plugins = [
     // const { a, ...z } = obj;
     require.resolve('babel-plugin-transform-es2015-destructuring'),
     // const fn = ({ a, ...otherProps }) => otherProps;
-    require.resolve('babel-plugin-transform-es2015-parameters')
+    require.resolve('babel-plugin-transform-es2015-parameters'),
+    // for (const i of foo) {}
+    require.resolve('babel-plugin-transform-es2015-for-of')
   ];
 
 // This is similar to how `env` works in Babel:
