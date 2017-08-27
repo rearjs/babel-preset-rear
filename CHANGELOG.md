@@ -1,5 +1,12 @@
 # Change Log
 
+## [1.1.1] (2017-08-27)
+
+### :bug: Bug Fix
+
+* Fix misspelled preset name `babel-preset-react` in `index.js` that
+  was causing a circular dependency requirement.
+
 ## [1.1.0] (2017-08-27)
 
 ### :rocket: Enhancement
@@ -45,7 +52,7 @@
 Add babel preset for Rear Projects. This preset include support for ES6 class 
 properties, flowtype, jsx syntax and react.
 
-
+[1.1.1]: https://github.com/rearjs/babel-preset-rear/compare/1.1.0...1.1.1
 [1.1.0]: https://github.com/rearjs/babel-preset-rear/compare/1.0.3...1.1.0
 [1.0.3]: https://github.com/rearjs/babel-preset-rear/compare/1.0.2...1.0.3
 [1.0.2]: https://github.com/rearjs/babel-preset-rear/compare/1.0.1...1.0.2

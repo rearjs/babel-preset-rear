@@ -69,7 +69,7 @@ module.exports = {
       },
     }],
     // JSX, Flow
-    require.resolve('babel-preset-rear')
+    require.resolve('babel-preset-react')
   ],
   plugins: plugins
 };
